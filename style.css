@@ -1,0 +1,189 @@
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.mid-content{
+    width: 1200px;
+    margin: auto;
+}
+body,h1,h2,h3,h4,h5,h6,span,a,p{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.header-section{
+    background-color: black;
+    
+}
+
+.header-logo img {
+	width: 260px;
+}
+.navbar{}
+.navbar ul {
+	text-align: right;
+    
+}
+.navbar ul li {
+	display: inline-block;
+}
+.navbar ul li a {
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	padding: 5px 20px;
+	font-weight: 600;
+    transition: .5s;
+    border-bottom: none;
+}
+.navbar ul li:first-child a{
+    color: rgb(196,147,82);
+}
+.navbar ul li a span {
+	font-size: 12px;
+}
+.navbar ul li a:hover{
+    color: rgb(196,147,82); 
+}
+
+/* main css */
+.banner{
+    background-image: url(./img/banner.jpg);
+    padding: 120px 0px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.banner::after{
+    content: "";
+    background-color: rgba(0,0,0, .7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+}
+.banner-inner h1 {
+	font-size: 70px;
+	font-weight: 800;
+}
+.banner-inner h2 {
+	font-size: 30px;
+	font-weight: 600;
+}
+.banner-btn {
+	background: rgb(198,148,83);
+	border: none;
+	text-transform: capitalize;
+	display: inline-block;
+	padding: 15px 30px;
+	border-radius: 30px;
+	color: white;
+	margin-top: 20px;
+    transition: .5s;
+}
+.banner-btn:hover{
+    background-color: white;
+    color: rgb(198,148,83);
+}
+/* service section css  */
+.service-section {
+	padding: 80px 0px;
+    background-color: rgb(248,248,248);
+}
+.service-image img {
+	margin: 20px 0px;
+	border-radius: 50%;
+    transform: scaleY(360deg);
+}
+.service-image img:hover{
+    transform: scaleY(360deg);
+}
+.services{}
+.service-item {
+	width: 24%;
+	background-color: white;
+	text-align: center;
+	padding: 20px;
+	transition: .5s;
+	box-sizing: border-box;
+	margin-right: 16px;
+}
+.service-item:nth-child(4) {
+    margin-right: 0px;
+}
+.service-item:hover{
+    background-color: rgb(188,187,185);
+}
+.service-item h2 {
+	font-size: 20px;
+	font-weight: 600;
+}
+.service-item p{
+    color: grey;
+}
+.service-btn {
+	background: rgb(198,148,83);
+	border: none;
+	text-transform: capitalize;
+	display: inline-block;
+	padding: 15px 30px;
+	border-radius: 10px;
+	color: white;
+	margin: 20px 0px;
+	transition: .5s;
+}
+.service-btn:hover{
+    background-color: white;
+    color: rgb(198,148,83);
+}
+.service-item:hover .service-image{
+    transform: scaleY(360deg);
+}
+.service-item:hover .service-btn{
+    background-color: white;
+    color: rgb(198,148,83);
+}
+/* ABOUT CCSS  */
+.about-section{
+    padding: 80px 0px;
+    background-color: rgb(248,248,248);
+}
+.about{}
+.about-left-content{
+    width: 40%;
+}
+.about-right-content {
+	width: 53%;
+}
+.about-right-content h1{}
+.about-right-content span{
+    color: rgb(196,147,82);
+}
+.about-right-content p{
+    color: grey;
+    font-size: 15px;
+}
+.about-btn {
+	background: rgb(0, 0, 0);
+	border: none;
+	text-transform: capitalize;
+	display: inline-block;
+	padding: 15px 20px;
+	color: rgb(255, 255, 255);
+	margin: 15px 0px;
+	transition: .5s;
+}
+.address-bar{}
