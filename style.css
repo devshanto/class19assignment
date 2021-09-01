@@ -42,6 +42,7 @@ body,h1,h2,h3,h4,h5,h6,span,a,p{
     transition: .5s;
     border-bottom: none;
 }
+
 .navbar ul li:first-child a{
     color: rgb(196,147,82);
 }
@@ -82,6 +83,13 @@ body,h1,h2,h3,h4,h5,h6,span,a,p{
 .banner-inner h2 {
 	font-size: 30px;
 	font-weight: 600;
+    position: relative;
+}
+.banner-inner h2::before{
+    content: "";
+    width: 100px;
+    /* height: 10px; */
+    color: #fff;
 }
 .banner-btn {
 	background: rgb(198,148,83);
@@ -106,11 +114,10 @@ body,h1,h2,h3,h4,h5,h6,span,a,p{
 .service-image img {
 	margin: 20px 0px;
 	border-radius: 50%;
-    transform: scaleY(360deg);
+    transform: scaleX(360deg);
+    transition: .5s;
 }
-.service-image img:hover{
-    transform: scaleY(360deg);
-}
+
 .services{}
 .service-item {
 	width: 24%;
@@ -120,6 +127,7 @@ body,h1,h2,h3,h4,h5,h6,span,a,p{
 	transition: .5s;
 	box-sizing: border-box;
 	margin-right: 16px;
+	height: 360px;
 }
 .service-item:nth-child(4) {
     margin-right: 0px;
@@ -131,8 +139,9 @@ body,h1,h2,h3,h4,h5,h6,span,a,p{
 	font-size: 20px;
 	font-weight: 600;
 }
-.service-item p{
-    color: grey;
+.service-item p {
+	color: grey;
+	margin-bottom: 28px;
 }
 .service-btn {
 	background: rgb(198,148,83);
@@ -142,19 +151,25 @@ body,h1,h2,h3,h4,h5,h6,span,a,p{
 	padding: 15px 30px;
 	border-radius: 10px;
 	color: white;
-	margin: 20px 0px;
 	transition: .5s;
 }
 .service-btn:hover{
     background-color: white;
     color: rgb(198,148,83);
 }
-.service-item:hover .service-image{
-    transform: scaleY(360deg);
+.service-item:hover .service-image img{
+    transform: rotateY(360deg);
+    transition: .7s;
 }
 .service-item:hover .service-btn{
     background-color: white;
     color: rgb(198,148,83);
+    
+}
+.service-item:hover .service-btn:hover {
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	margin-top: 10px;
 }
 /* ABOUT CCSS  */
 .about-section{
@@ -186,4 +201,75 @@ body,h1,h2,h3,h4,h5,h6,span,a,p{
 	margin: 15px 0px;
 	transition: .5s;
 }
-.address-bar{}
+.about-btn:hover{
+    color: white;
+    background-color: rgb(198,148,83);
+}
+.address-bar{
+    color: grey;
+    margin-top: 30px;
+}
+/* form section  */
+.form-section{
+    background-image: url(./img/form.jpg);
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    padding: 50px 0px;
+}
+.form h1 {
+	font-size: 45px;
+}
+.form p{
+    width: 600px;
+    font-size: 18px;
+    color: grey;
+    
+}
+.input-form {
+	display: inline-block;
+	width: 500px;
+	margin-bottom: 20px;
+	padding: 13px;
+	font-size: 20px;
+	border: 1px solid #ddd;
+    color: grey;
+    
+}
+.input-form:focus{
+    border: 2px solid black;
+    outline: none;
+}
+
+.form-btn {
+	background-color: rgb(196,147,82);
+	color: white;
+	border: none;
+	display: inline-block;
+	text-transform: capitalize;
+	padding: 15px 25px;
+	font-size: 18px;
+	margin-top: 20px;
+}
+/* ooter css */
+.footer-section{
+    background-color:rgb(109,109,109);
+    padding: 15px 0px;
+    color: rgb(221,221,221);
+
+}
+.footer{}
+.copyright p {
+	font-size: 17px;
+	margin-top: 23px;
+}
+.footer-icon{}
+.footer-icon ul{}
+.footer-icon ul li{
+    display: inline-block;
+}
+.footer-icon ul li span {
+	color: rgb(221,221,221);
+	font-size: 25px;
+	margin-left: 30px;
+}
